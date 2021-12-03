@@ -1,17 +1,8 @@
 from helpers.fileLoader import *
 
 
-def loadFile():
-    fileData = readFile("q1")
-    data = []
-    lines = [line.replace('\n', '') for line in fileData]
-    for ln in lines:
-        data.append(int(ln))
-    return data
-
-
 def p1():
-    fileData = loadFile()
+    fileData = read_fileInt("q1")
     prevNum = None
     increaseCount = 0
     for num in fileData:
@@ -31,7 +22,7 @@ def calculateNums(data, currentPos):
 
 
 def p2():
-    fileData = loadFile()
+    fileData = read_fileInt("q1")
     prevNum = None
     increase = 0
     for idx, num in enumerate(fileData):
