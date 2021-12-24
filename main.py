@@ -23,5 +23,5 @@ import src.q4 as q4
 print('q4----')
 print('Part 1')
 q4.p1()
-# print('Part 2')
-# q3.p2()
+print('Part 2')
+q4.p2()
